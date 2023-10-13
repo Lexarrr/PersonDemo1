@@ -60,7 +60,7 @@
       </VBox>
       <ButtonBar layoutX="439.0" layoutY="266.0" prefHeight="40.0" prefWidth="180.0">
         <buttons>
-           <Button id="but" mnemonicParsing="false" onAction="#ToSave" text="save" /> <!--style="-fx-border-color: #7CFC00;" text="save"-->
+           <Button id="but" fx:id="click" mnemonicParsing="false" onAction="#ToSave" text="save" /> <!--style="-fx-border-color: #7CFC00;" text="save"-->
            <Button id="bat" mnemonicParsing="false" onAction="#toDelete" text="delete" />
         </buttons>
       </ButtonBar>

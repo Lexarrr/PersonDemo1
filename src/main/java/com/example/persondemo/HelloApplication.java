@@ -7,6 +7,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -27,7 +28,16 @@ public class HelloApplication extends Application {
 
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 
-
+//        try{
+//            AnchorPane pane = (AnchorPane)fxmlLoader.load();
+//            mainStageController = fxmlLoader.getController();
+//            mainStageController.setStage(mainStage);
+//            Scene scene = new Scene(pane);
+//            stage.setScene(scene);
+//            stage.show();
+//        } catch(Exception e){
+//            e.printStackTrace();
+//        }
 
 //        EventHandler<ActionEvent> eventHandler = new EventHandler<>() {
 //            @Override
