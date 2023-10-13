@@ -84,6 +84,7 @@ linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #7CFC00 100%),
 
 .text-field {
 
+    -fx-text-fill: white;
     -fx-border-color: #007d34;
     -fx-border-radius: 7px;
     -fx-background-color: #151719;

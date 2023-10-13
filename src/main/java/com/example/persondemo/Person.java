@@ -17,8 +17,14 @@ public class Person {
 
 
     public Person(String firstName, String lastName,
-                  String profession, String birth, int age) throws MineException {
+                  String profession, String birth, int age) throws MineException, ExcFormatField {
         if(firstName == null || lastName == null || profession == null || birth == null|| age == 0){
+            throw new MineException();
+        }
+        if (!birth.contains(".") || birth.length() != 10){
+            throw new ExcFormatField(birth);
+        }
+        if (age <= 0){
             throw new MineException();
         }
         this.firstName = firstName;

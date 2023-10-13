@@ -20,8 +20,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-//        Pane root = new Pane();
-      Scene scene = new Scene(fxmlLoader.load());//  root
+        Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Person Form");
         stage.setScene(scene);
         stage.show();
@@ -29,23 +28,24 @@ public class HelloApplication extends Application {
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 
 
-        EventHandler<ActionEvent> eventHandler = new EventHandler<>() {
-            @Override
 
-            public void handle(ActionEvent event) {
-                final Stage dialog = new Stage();
-                dialog.initModality(Modality.APPLICATION_MODAL);
-                dialog.initOwner(new Stage());
-                VBox dialogVbox = new VBox(20);
-                dialogVbox.getChildren().add(new Text("CONGRATULATION!"));
-                Scene dialogScene = new Scene(dialogVbox, 300, 200);
-                dialog.setScene(dialogScene);
-                dialog.show();
-            }
-        };
-
-
-
+//        EventHandler<ActionEvent> eventHandler = new EventHandler<>() {
+//            @Override
+//
+//            public void handle(ActionEvent event) {
+//                final Stage dialog = new Stage();
+//                dialog.initModality(Modality.APPLICATION_MODAL);
+//                dialog.initOwner(new Stage());
+//                VBox dialogVbox = new VBox(20);
+//                dialogVbox.getChildren().add(new Text("CONGRATULATION!"));
+//                Scene dialogScene = new Scene(dialogVbox, 300, 200);
+//                dialog.setScene(dialogScene);
+//                dialog.show();
+//            }
+//        };
+//
+//        Button bt = new Button();
+//        bt.setOnAction(eventHandler.handle());
     }
 
     public static void main(String[] args) {
